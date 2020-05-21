@@ -1,0 +1,12 @@
+                                *************** this keyword *********
+
+    this references the object that is executing  the current function.
+
+    Eg:
+
+    const video = {
+        title = 'a',
+        play() {
+            console.log(this);  // this will reference the video object as it is the one which is executing  the function play
+            }
+        };

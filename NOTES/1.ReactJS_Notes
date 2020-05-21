@@ -1,0 +1,101 @@
+                        ************ REACT JS ***************
+
+                   ****INTRO AND SETUP : 
+
+React is a JavaScript library for building user interfaces. 
+It is maintained by Facebook and a community of individual developers and companies. 
+React can be used as a base in the development of single-page or mobile applications
+
+SetUP FOR REACT JS :
+
+## Install node.js 
+Node.js is an open-source, cross-platform, JavaScript runtime
+environment that executes JavaScript code outside of a web browser.
+
+## Install npm (yarn) :
+npm is a package manager for the JavaScript programming language.
+It is the default package manager for the JavaScript runtime environment Node.js
+
+## Project Setup for React :
+
+a. npx create-react-app <PROJECT_NAME>
+
+b. npm install create-react-app -g
+   create-react-app <PROJECT_NAME>
+
+DIfference :
+    npm is a tool mainly used to install packages.
+    npx is a tool to execute packages.
+
+npx can execute a package of a specified version for that folder
+
+Preffered approach, npx
+
+## Directory files:
+
+a.package.json contains details of dependencies and scripts required for the project
+b.node_modules contain the dependencies for the project
+c.src folder has all the js files   
+d.public folder has index.html file
+
+      
+            ******** DIVING INTO REACT *********
+
+## COMPONENTS :
+
+Components are the building blocks of any React app and a typical React app will have many of these. 
+Simply put, a component is a JavaScript class or function that optionally accepts inputs 
+i.e. properties(props) and returns a React element that describes how a section of the UI (User Interface) should appear.
+
+FUNCTIONAL COMPONENT VS CLASS COMPONENT : 
+
+The simplest way to define a component in React is to write a JavaScript function:
+
+function Welcome(props) {             // FUNCTIONAL COMPONENT
+  return <h1>Hello, {props.name}</h1>;
+}
+It’s just a function which accepts props and returns a React element.
+
+But you can also use the ES6 class syntax to write components.
+class Welcome extends React.Component { // CLASS COMPONENT
+  render() {
+    return <h1>Hello, {this.props.name}</h1>;
+  }
+}
+
+
+DIFFERENCE :
+
+## State :
+
+Because a functional component is just a plain JavaScript function, you cannot use setState() in your component.
+That’s the reason why they also get called functional stateless components. So everytime you see a functional component you can be sure that this particular component doesn’t have its own state.
+If you need a state in your component you will either need to create a class component or you lift the state up to the parent component and pass it down the functional component via props.
+
+************ This changed with the React 16.8 Hooks update!
+             You can now use the useState hook to use state in your functional components.
+
+## Lifecycle Hooks :
+
+Another feature which you cannot use in functional components are lifecycle hooks. The reason is the same like for state, all lifecycle hooks are coming from the React.Component which you extend from in classcomponents.
+So if you need lifecycle hooks you should probably use a class component.
+***********This changed with the React 16.8 Hooks update!
+           You can now use the useEffect hook to use lifecycle events in your functional components.  
+
+
+***** Lifecycle of Components
+Each component in React has a lifecycle which you can monitor and manipulate during its three main phases.
+The three phases are: Mounting, Updating, and Unmounting.
+
+***** State of components
+In the React sense, “state” is an object that represents the parts of the app that can change.
+Each component can maintain its own state, which lives in an object called this. state .
+
+***** PROPS :
+“Props” is a special keyword in React, which stands for properties and is being used for passing data from one component to another.
+Furthermore,props are immutable,i.e. props data is read-only, which means that data coming from the parent should not be changed by child components.
+
+Eg :  If we create a component COMP1 which return JSX, we can send some value,as props while calling the Component
+      
+
+
