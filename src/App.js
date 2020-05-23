@@ -5,6 +5,9 @@ import HelloC from './components/Hello_classcomp'
 import MessageC from './components/MessageC'
 import Counter from './components/Counter'
 import BindEvent from './components/BindiEvent'
+import ParentComponent from './components/ParentComponent'
+import ConditionalRenderLogin from './components/ConditionalRenderLogin'
+import ListRender from './components/ListRender'
 
 class App extends Component{
   render(){
@@ -21,8 +24,12 @@ class App extends Component{
         </HelloC> <Counter /> <MessageC />
 
         */}
-        <BindEvent />
+        {/*<BindEvent />*/}
+        {/*<ParentComponent />*/}
+        {/*<ConditionalRenderLogin />*/}
+        <ListRender />
     </div>
+
   )
 }
 }
