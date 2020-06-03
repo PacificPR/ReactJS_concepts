@@ -98,4 +98,16 @@ Furthermore,props are immutable,i.e. props data is read-only, which means that d
 Eg :  If we create a component COMP1 which return JSX, we can send some value,as props while calling the Component
       
 
+***** Controlled Components
+In HTML, form elements such as <input>, <textarea>, and <select> typically maintain their own state and update it based on user input.
+In React, mutable state is typically kept in the state property of components, and only updated with setState().
+
+We can combine the two by making the React state be the “single source of truth”.
+Then the React component that renders a form also controls what happens in that form on subsequent user input.
+An input form element whose value is controlled by React in this way is called a “controlled component”.
+
+IF we don't want the input data to be lost after submitting, 
+    add event.preventDefault , 
+    this will prevent the default behaviour of form submission.
+
 
